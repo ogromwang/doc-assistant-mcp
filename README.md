@@ -68,3 +68,24 @@ async with Client() as client:
 1. 首次加载文档时会构建向量索引，可能需要一定时间
 2. 查询性能取决于文档数量和嵌入模型的性能
 3. 服务器使用标准输入输出作为传输方式，适合与其他 MCP 组件集成使用
+
+## 客户端配置
+```json
+{
+  "mcpServers": {
+    "document-assistant": {
+        "command": "python",
+        "args": [
+          "你的 python 文件地址 如./mcp_server.py",
+          "--paths",
+          "你的文档路径 如/Users/Downloads",
+          "--embedding-model",
+          "moka-ai/m3e-base"
+        ],
+        "env": {}
+      }
+
+  }
+}
+
+```
