@@ -1,6 +1,6 @@
 # 个性化文档助手 MCP 服务器
 
-一个基于 fastMCP 的个性化文档助手服务器，可以查询指定电脑路径的文档内容。
+一个基于 MCP 的个性化文档助手服务器，可以查询指定电脑路径的文档内容。
 
 ## 功能特点
 
@@ -13,11 +13,7 @@
 
 ```bash
 # 安装基础依赖
-pip install langchain langchain-community faiss-cpu pypdf transformers unstructured docx2txt pandas openpyxl
-
-# 安装 MCP 依赖
-pip install mcp-fastmcp
-```
+pip install langchain langchain-community faiss-cpu pypdf transformers unstructured docx2txt pandas openpyxl mcp
 
 ## 使用方法
 
